@@ -1,0 +1,135 @@
+from constants import *
+
+BOW = ("BowButton", (0, 0), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Bow", (("images", "z3", "bow1.png"), ("images", "z3", "bow2.png")))
+BOOMERANG = ("DoubleButton", (1, 0), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), ("Blue Boomerang", "Red Boomerang"), (("images", "z3", "boomerang1.png"), ("images", "z3", "boomerang2.png")))
+HOOKSHOT = ("SimpleButton", (2, 0), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Hookshot", ("images", "z3", "hookshot.png"))
+BOMB = ("SimpleButton", (3, 0), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "ALTTP Bombs", ("images", "z3", "bomb.png"))
+MUSHPOWDER = ("DoubleButton", (4, 0), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), ("Mushroom", "Powder"), (("images", "z3", "mushroom.png"), ("images", "z3", "powder.png")))
+FIREROD = ("SimpleButton", (0, 1), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Fire Rod", ("images", "z3", "firerod.png"))
+ICEROD = ("SimpleButton", (1, 1), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Ice Rod", ("images", "z3", "icerod.png"))
+BOMBOS = ("SimpleButton", (2, 1), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Bombos", ("images", "z3", "bombos.png"))
+ETHER = ("SimpleButton", (3, 1), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Ether", ("images", "z3", "ether.png"))
+QUAKE = ("SimpleButton", (4, 1), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Quake", ("images", "z3", "quake.png"))
+LAMP = ("SimpleButton", (0, 2), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Lamp", ("images", "z3", "lamp.png"))
+HAMMER = ("SimpleButton", (1, 2), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Hammer", ("images", "z3", "hammer.png"))
+SHOVELFLUTE = ("DoubleButton", (2, 2), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), ("Shovel", "Flute"), (("images", "z3", "shovel.png"), ("images", "z3", "flute.png")))
+BUGNET = ("SimpleButton", (3, 2), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Bugnet", ("images", "z3", "bugnet.png"))
+BOOK = ("SimpleButton", (4, 2), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Book of Mudora", ("images", "z3", "book.png"))
+BOTTLE = ("CounterButton", (0, 3), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Bottle", ("images", "z3", "bottle.png"), True, 1, 4)
+SOMARIA = ("SimpleButton", (1, 3), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Cane of Somaria", ("images", "z3", "somaria.png"))
+BYRNA = ("SimpleButton", (2, 3), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Cane of Byrna", ("images", "z3", "byrna.png"))
+CAPE = ("SimpleButton", (3, 3), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Cape", ("images", "z3", "cape.png"))
+MIRROR = ("SimpleButton", (4, 3), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Mirror", ("images", "z3", "mirror.png"))
+SWORD = ("CycleButton", (0, 4), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), ("No Sword", "Fighter Sword", "Master Sword", "Tempered Sword", "Gold Sword"), (("images", "z3", "sword1.png"), ("images", "z3", "sword2.png"), ("images", "z3", "sword3.png"), ("images", "z3", "sword4.png")), True)
+BOOTS = ("SimpleButton", (1, 4), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Boots", ("images", "z3", "boots.png"))
+GLOVE = ("CycleButton", (2, 4), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), ("No Glove", "Power Glove", "Titan's Mitts"), (("images", "z3", "glove1.png"), ("images", "z3", "glove2.png")), True)
+FLIPPERS = ("SimpleButton", (3, 4), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Flippers", ("images", "z3", "flippers.png"))
+MOONPEARL = ("SimpleButton", (4, 4), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Moonpearl", ("images", "z3", "moonpearl.png"))
+
+ALTTP_PANEL_DATA = ((5, 5), (BUTTON_SPACING, BUTTON_SPACING), (BOW, BOOMERANG, HOOKSHOT, BOMB, MUSHPOWDER, FIREROD, ICEROD, BOMBOS, ETHER, QUAKE, LAMP, HAMMER, SHOVELFLUTE, BUGNET, BOOK, BOTTLE, SOMARIA, BYRNA, CAPE, MIRROR, SWORD, BOOTS, GLOVE, FLIPPERS, MOONPEARL))
+
+MORPH = ("SimpleButton", (0, 0), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Morph Ball", ("images", "sm", "morph.png"))
+SMBOMB = ("SimpleButton", (1, 0), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Morph Bombs", ("images", "sm", "bombs.png"))
+SPRING = ("SimpleButton", (2, 0), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Spring Ball", ("images", "sm", "springball.png"))
+VARIA = ("SimpleButton", (3, 0), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Varia Suit", ("images", "sm", "varia.png"))
+GRAVITY = ("SimpleButton", (4, 0), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Gravity Suit", ("images", "sm", "gravity.png"))
+MISSLES = ("CounterButton", (5, 0), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Missles", ("images", "sm", "missile.png"), True, 5, 150)
+SUPERS = ("CounterButton", (6, 0), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Supers", ("images", "sm", "supermissile.png"), True, 5, 100)
+SCREW = ("SimpleButton", (0, 1), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Screw Attack", ("images", "sm", "screw.png"))
+SPACE = ("SimpleButton", (1, 1), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Space Jump", ("images", "sm", "space.png"))
+HIGHJUMP = ("SimpleButton", (2, 1), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "High Jump", ("images", "sm", "hijump.png"))
+SPEED = ("SimpleButton", (3, 1), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Speed Booster", ("images", "sm", "speed.png"))
+XRAY = ("SimpleButton", (4, 1), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "X-Ray Scope", ("images", "sm", "xray.png"))
+POWERBOMBS = ("CounterButton", (5, 1), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Powerbombs", ("images", "sm", "powerbomb.png"), True, 5, 100)
+GRAPPLE = ("SimpleButton", (6, 1), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Grapple Beam", ("images", "sm", "grappling.png"))
+
+SM_PANEL_DATA_1 = ((7, 2), (BUTTON_SPACING, ALTTP_PANEL_DATA[0][1] * (LARGE_BUTTON_SIZE + BUTTON_SPACING) + BUTTON_SPACING), (MORPH, SMBOMB, SPRING, VARIA, GRAVITY, MISSLES, SUPERS, SCREW, SPACE, HIGHJUMP, SPEED, XRAY, POWERBOMBS, GRAPPLE))
+
+CHARGE = ("SimpleButton", (0, 0), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Charge Beam", ("images", "sm", "charge.png"))
+WAVE = ("SimpleButton", (1, 0), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Wave Beam", ("images", "sm", "wave.png"))
+ICE = ("SimpleButton", (2, 0), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Ice Beam", ("images", "sm", "ice.png"))
+SPAZER = ("SimpleButton", (3, 0), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Spazer Beam", ("images", "sm", "spazer.png"))
+PLASMA = ("SimpleButton", (4, 0), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Plasma Beam", ("images", "sm", "plasma.png"))
+
+SM_PANEL_DATA_2 = ((5, 1), (BUTTON_SPACING, (ALTTP_PANEL_DATA[0][1] + SM_PANEL_DATA_1[0][1]) * (LARGE_BUTTON_SIZE + BUTTON_SPACING) + BUTTON_SPACING), (CHARGE, WAVE, ICE, SPAZER, PLASMA))
+
+MEDALLION = ("CycleButton", (0, SMALL_BUTTON_SIZE), (SMALL_BUTTON_SIZE, SMALL_BUTTON_SIZE), ("Medallion Unknown", "Bombos", "Ether", "Quake"), (("images", "z3", "medallion0.png"), ("images", "z3", "medallion1.png"), ("images", "z3", "medallion2.png"), ("images", "z3", "medallion3.png")), False)
+PRIZE = ("CycleButton", (SMALL_BUTTON_SIZE, SMALL_BUTTON_SIZE), (SMALL_BUTTON_SIZE, SMALL_BUTTON_SIZE), ("Dungeon Prize Unknown", "Crystal", "Red Crystal", "Pendant", "Green Pendant", "SM Boss Pendant"), (("images", "z3", "bossicon0.png"), ("images", "z3", "bossicon1.png"), ("images", "z3", "bossicon2.png"), ("images", "z3", "bossicon3.png"), ("images", "z3", "bossicon4.png"), ("images", "sm", "bossreward.png")), False)
+
+ARMOS = ("SimpleButton", ORIGIN, (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Armos Knights", ("images", "z3", "boss0.png"))
+LANMOLAS = ("SimpleButton", ORIGIN, (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Lanmolas", ("images", "z3", "boss1.png"))
+MOLDORM = ("SimpleButton", ORIGIN, (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Moldorm", ("images", "z3", "boss2.png"))
+HELMA = ("SimpleButton", ORIGIN, (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Helmasaur", ("images", "z3", "boss3.png"))
+ARRGHUS = ("SimpleButton", ORIGIN, (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Arrghus", ("images", "z3", "boss4.png"))
+MOTH = ("SimpleButton", ORIGIN, (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Mothula", ("images", "z3", "boss5.png"))
+BLIND = ("SimpleButton", ORIGIN, (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Blind", ("images", "z3", "boss6.png"))
+KHOLD = ("SimpleButton", ORIGIN, (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Kholdstare", ("images", "z3", "boss7.png"))
+VITREOUS = ("SimpleButton", ORIGIN, (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Vitreous", ("images", "z3", "boss8.png"))
+TRINEXX = ("SimpleButton", ORIGIN, (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Trinexx", ("images", "z3", "boss9.png"))
+
+EP = ("LocationButton", (0, 0), (2 * LARGE_BUTTON_SIZE + BUTTON_SPACING, LARGE_BUTTON_SIZE), "Eastern Palace", "EP", ARMOS, (PRIZE, ))
+DP = ("LocationButton", (0, 1), (2 * LARGE_BUTTON_SIZE + BUTTON_SPACING, LARGE_BUTTON_SIZE), "Desert Palace", "DP", LANMOLAS, (PRIZE, ))
+TOH = ("LocationButton", (0, 2), (2 * LARGE_BUTTON_SIZE + BUTTON_SPACING, LARGE_BUTTON_SIZE), "Tower of Hera", "ToH", MOLDORM, (PRIZE, ))
+POD = ("LocationButton", (0, 3), (2 * LARGE_BUTTON_SIZE + BUTTON_SPACING, LARGE_BUTTON_SIZE), "Palace of Darkness", "PoD", HELMA, (PRIZE, ))
+SP = ("LocationButton", (0, 4), (2 * LARGE_BUTTON_SIZE + BUTTON_SPACING, LARGE_BUTTON_SIZE), "Swamp Palace", "SP", ARRGHUS, (PRIZE, ))
+
+ALTTP_LOCATION_PANEL_A = ((1, 5), (ALTTP_PANEL_DATA[0][0] * (LARGE_BUTTON_SIZE + BUTTON_SPACING) + BUTTON_SPACING, BUTTON_SPACING), (EP, DP, TOH, POD, SP))
+
+LARGE_CHEST_DATA = (("images", "z3", "largechest0.png"), ("images", "z3", "largechest1.png"))
+SMALL_CHEST_DATA = (("images", "z3", "smallchest0.png"), ("images", "z3", "smallchest1.png"))
+BIG_KEY_DATA = ("images", "z3", "bigkey.png")
+SMALL_KEY_DATA = ("images", "z3", "smallkey.png")
+
+LARGE_CHEST_PANEL_A = ((1, 5), (ALTTP_LOCATION_PANEL_A[1][0] + LARGE_BUTTON_SIZE + BUTTON_SPACING, BUTTON_SPACING), LARGE_CHEST_DATA, (3, 2, 2, 5, 6))
+ALTTP_KEYSANITY_PANEL_A = ((1, 5), LARGE_CHEST_PANEL_A[1], SMALL_CHEST_DATA, BIG_KEY_DATA, SMALL_KEY_DATA, ((6, 0), (6, 1), (6, 1), (14, 6), (10, 1)))
+
+SW = ("LocationButton", (0, 0), (2 * LARGE_BUTTON_SIZE + BUTTON_SPACING, LARGE_BUTTON_SIZE), "Skull Woods", "SW", MOTH, (PRIZE, ))
+TT = ("LocationButton", (0, 1), (2 * LARGE_BUTTON_SIZE + BUTTON_SPACING, LARGE_BUTTON_SIZE), "Theives Town", "TT", BLIND, (PRIZE, ))
+IP = ("LocationButton", (0, 2), (2 * LARGE_BUTTON_SIZE + BUTTON_SPACING, LARGE_BUTTON_SIZE), "Ice Palace", "IP", KHOLD, (PRIZE, ))
+MM = ("LocationButton", (0, 3), (2 * LARGE_BUTTON_SIZE + BUTTON_SPACING, LARGE_BUTTON_SIZE), "Misery Mire", "MM", VITREOUS, (PRIZE, MEDALLION))
+TR = ("LocationButton", (0, 4), (2 * LARGE_BUTTON_SIZE + BUTTON_SPACING, LARGE_BUTTON_SIZE), "Turtle Rock", "TR", TRINEXX, (PRIZE, MEDALLION))
+
+ALTTP_LOCATION_PANEL_B = ((1, 5), (LARGE_CHEST_PANEL_A[1][0] + LARGE_BUTTON_SIZE + BUTTON_SPACING, BUTTON_SPACING), (SW, TT, IP, MM, TR))
+
+LARGE_CHEST_PANEL_B = ((1, 5), (ALTTP_LOCATION_PANEL_B[1][0] + LARGE_BUTTON_SIZE + BUTTON_SPACING, BUTTON_SPACING), LARGE_CHEST_DATA, (2, 4, 3, 2, 5))
+ALTTP_KEYSANITY_PANEL_B = ((1, 5), LARGE_CHEST_PANEL_B[1], SMALL_CHEST_DATA, BIG_KEY_DATA, SMALL_KEY_DATA, ((8, 3), (8, 1), (8, 2), (8, 3), (12, 4)))
+
+KRAID = ("SimpleButton", ORIGIN, (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Kraid", ("images", "sm", "kraid.png"))
+PHANTOON = ("SimpleButton", ORIGIN, (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Phantoon", ("images", "sm", "phantoon.png"))
+DRAYGON = ("SimpleButton", ORIGIN, (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Draygon", ("images", "sm", "draygon.png"))
+RIDLEY = ("SimpleButton", ORIGIN, (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Ridley", ("images", "sm", "ridley.png"))
+
+KR = ("LocationButton", (0, 0), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Kraid", "Kr", KRAID, (PRIZE, ))
+PH = ("LocationButton", (1, 0), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Phantoon", "Ph", PHANTOON, (PRIZE, ))
+DR = ("LocationButton", (0, 1), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Draygon", "Dr", DRAYGON, (PRIZE, ))
+RI = ("LocationButton", (1, 1), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Ridley", "Ri", RIDLEY, (PRIZE, ))
+
+SM_LOCATION_PANEL = ((2, 2), (ALTTP_LOCATION_PANEL_B[1][0], SM_PANEL_DATA_1[1][1]), (KR, PH, DR, RI))
+
+GT_ENTRY = ("GoalButton", (0, 0), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "GT Entry", ("images", "z3", "ganonstower.png"), 1, 8)
+GANON_VULNERABLE = ("GoalButton", (1, 0), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Ganon Vulnerable", ("images", "z3", "ganon.png"), 1, 8)
+TOURIAN_ENTRY = ("GoalButton", (2, 0), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Tourian Entry", ("images", "sm", "motherbrain.png"), 1, 5)
+SM_LOGIC = ("GoalCycleButton", (3, 0), (LARGE_BUTTON_SIZE, SMALL_BUTTON_SIZE), ("Normal SM Logic", "Hard SM Logic"), ("Normal", "Hard"))
+ALTTP_GOAL = ("GoalCycleButton", (3, 0.5), (LARGE_BUTTON_SIZE, SMALL_BUTTON_SIZE), ("Defeat Ganon", "Fast Ganon", "All Dungeons"), ("Defeat", "Fast", "AD"))
+
+GOAL_PANEL = ((4, 1), (ALTTP_LOCATION_PANEL_A[1][0], SM_PANEL_DATA_2[1][1]), (GT_ENTRY, GANON_VULNERABLE, TOURIAN_ENTRY, ALTTP_GOAL, SM_LOGIC))
+
+SM_KEY_1 = ("SimpleButton", (0, SMALL_BUTTON_SIZE), (SMALL_BUTTON_SIZE, SMALL_BUTTON_SIZE), "Key 1", ("images", "sm", "key1.png"))
+SM_KEY_2 = ("SimpleButton", (SMALL_BUTTON_SIZE, SMALL_BUTTON_SIZE), (SMALL_BUTTON_SIZE, SMALL_BUTTON_SIZE), "Key 2", ("images", "sm", "key2.png"))
+SM_KEY_BOSS = ("SimpleButton", (SMALL_BUTTON_SIZE, 0), (SMALL_BUTTON_SIZE, SMALL_BUTTON_SIZE), "Boss Key", ("images", "sm", "keyb.png"))
+
+CR = ("LocationButton", (0, 0), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Crateria", "Cr", None, (SM_KEY_1, SM_KEY_2, SM_KEY_BOSS))
+BR = ("LocationButton", (0, 1), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Brinstar", "Br", None, (SM_KEY_1, SM_KEY_2, SM_KEY_BOSS))
+UN = ("LocationButton", (0, 2), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Upper Norfair", "UN", None, (SM_KEY_1, SM_KEY_2, SM_KEY_BOSS))
+MA = ("LocationButton", (0, 3), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Maridia", "Ma", None, (SM_KEY_1, SM_KEY_2, SM_KEY_BOSS))
+WS = ("LocationButton", (0, 4), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Wrecked Ship", "WS", None, (SM_KEY_1, SM_KEY_BOSS))
+LN = ("LocationButton", (0, 5), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Lower Norfair", "LN", None, (SM_KEY_1, SM_KEY_BOSS))
+
+GT = ((0, 6), (LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE), "Ganon's Tower", "GT", 27, 4)
+HC = ((0, 7), (LARGE_BUTTON_SIZE, SMALL_BUTTON_SIZE), "Hyrule Castle", "HC", 1)
+CT = ((0, 7.5), (LARGE_BUTTON_SIZE, SMALL_BUTTON_SIZE), "Castle Tower", "CT", 1)
+
+SM_KEYSANITY_PANEL = ((1, 8), (LARGE_CHEST_PANEL_B[1][0] + LARGE_BUTTON_SIZE + BUTTON_SPACING, BUTTON_SPACING), (CR, BR, UN, MA, WS, LN), (SMALL_CHEST_DATA, BIG_KEY_DATA, SMALL_KEY_DATA), (GT, ), (HC, CT))
+
+KEY_BUTTON = ("Toggle Keysanity", (WIN_WIDTH - SMALL_BUTTON_SIZE, 0), (SMALL_BUTTON_SIZE, SMALL_BUTTON_SIZE), (("images", "z3", "smallnokeygray.png"), ("images", "z3", "smallkeygray.png")))
+MESSAGE_BUTTON = ("Toggle Messages", ORIGIN, (SMALL_BUTTON_SIZE, SMALL_BUTTON_SIZE), (("images", "z3", "mapno.png"), ("images", "z3", "mapyes.png")))
